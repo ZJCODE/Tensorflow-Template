@@ -1,0 +1,13 @@
+0 1 1.2 2.3 a w a,b,a,b
+0 2 1.2 4.2 a w b,b,b,a,a,b,b,b
+0 3 3.2 1.2 b e a,a,b,a
+0 4 3.2 1.2 c e b,b,a,a,b,a
+1 5 1.2 3.2 c r b,a,b,a,c
+1 6 4.2 2.3 c r a,a,a,b
+0 7 1.4 3.2 c r a,a,a,a,b,b,b
+0 1 5.3 3.5 a r a,b,b,a
+1 2 2.3 2.2 a w a,a,b,a,a
+0 3 2.3 2.5 d w a,a,a,b,a,c
+1 4 5.5 3.3 d e a,c,a,c
+1 5 2.2 4.2 d e a,b,c,d
+0 2 2.2 4.4 f e a,a,c,d,d,s

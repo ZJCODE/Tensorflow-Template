@@ -1,0 +1,12 @@
+__pycache__
+*.svn
+*.idea
+*target/
+*.iml
+*.bak
+*lib/
+build.xml
+*logs/
+!src/
+*.pem
+*.key
