@@ -1,0 +1,179 @@
+# Feature Configuration
+
+# 1.type
+# 2.transform
+# 3.parameter
+
+# ---------------------------------------------------------------
+
+
+# type : continuous
+# |
+# |---transform : bucket
+# |            |--parameter : boundaries
+# |---transform : original
+# |            |--parameter :
+
+# type : category
+# |
+# |---transform :file_one_hot
+# |            |--parameter : file_path
+# |---transform :hash_ont_hot
+# |            |--parameter : hash_size
+# |---transform : file_embedding
+# |            |--parameter : file_path
+# |            |--parameter : embedding_size (-1 means auto)
+# |---transform : hash_embedding
+# |            |--parameter : hash_size
+# |            |--parameter : embedding_size (-1 means auto)
+# |---transform : local_vec
+# |            |--parameter : vec_dim
+# |            |--parameter : meta_path
+# |            |--parameter : vec_path
+# |---transform : extend_feature
+# |            |--parameter : file_path
+# |            |--parameter : cols_name
+# |            |--parameter : extend_data_sep
+
+# type : sequence
+# |
+# |---transform : file_one_hot
+# |            |--parameter : file_path
+# |---transform : hash_ont_hot
+# |            |--parameter : hash_size
+# |---transform : file_embedding
+# |            |--parameter : file_path
+# |            |--parameter : embedding_size (-1 means auto)
+# |---transform : hash_embedding
+# |            |--parameter : hash_size
+# |            |--parameter : embedding_size (-1 means auto)
+# |---transform : file_multi_hot
+# |            |--parameter : file_path
+# |---transform : hash_multi_hot
+# |            |--parameter : hash_size
+# |---transform : local_vec
+# |            |--parameter : vec_dim
+# |            |--parameter : meta_path
+# |            |--parameter : vec_path
+# |---transform : extend_feature
+# |            |--parameter : file_path
+# |            |--parameter : cols_name
+# |            |--parameter : extend_data_sep
+
+
+# ---------------------------------------------------------------
+
+
+col1:
+  type: continuous
+  transform: original
+  parameter:
+
+col2:
+  type: continuous
+  transform: bucket
+  parameter:
+    boundaries: [0,5,10]
+
+col3:
+  type: continuous
+  transform: original
+  parameter:
+
+col4:
+  type: category
+  transform: file_embedding
+  parameter:
+    file_path: '../data/vocabulary/vocabulary_col4'
+    embedding_size: 4
+
+#col4:
+#  type: category
+#  transform: hash_embedding
+#  parameter:
+#    hash_size: 1000
+#    embedding_size: -1
+
+#col4:
+#  type: category
+#  transform: file_one_hot
+#  parameter:
+#    file_path: '../data/vocabulary/vocabulary_col4'
+
+#col4:
+#  type: category
+#  transform: hash_ont_hot
+#  parameter:
+#    hash_size: 1000
+
+col5:
+  type: continuous
+  transform: original
+  parameter:
+
+col6:
+  type: sequence
+  transform: file_multi_hot
+  parameter:
+    file_path: '../data/vocabulary/vocabulary_col6'
+
+
+col7:
+  type: category
+  transform: local_vec
+  parameter:
+    meta_path: '../data/vector/meta_sample'
+    vec_path: '../data/vector/vec_sample'
+
+col8:
+  type: sequence
+  transform: file_embedding
+  parameter:
+    file_path: '../data/vocabulary/vocabulary_col8'
+    embedding_size: 4
+
+col6_[extend]: # col_name add '_[extend]' | must follow this rule
+  type: sequence
+  transform: extend_feature
+  parameter:
+    file_path: '../data/map/extend_data_sample'
+    cols_name: ['map_id', 'extend_1', 'extend_2']
+    extend_data_sep: ' '
+
+col7_[extend]:
+  type: category
+  transform: extend_feature
+  parameter:
+    file_path: '../data/map/extend_data_sample'
+    cols_name: ['map_id', 'extend_1', 'extend_2']
+    extend_data_sep: ' '
+
+# below must after col_[extend]
+
+col7_extend_1:
+  type: category
+  transform: file_embedding
+  parameter:
+    file_path: '../data/vocabulary/vocabulary_extend_1'
+    embedding_size: -1
+
+col7_extend_2:
+  type: category
+  transform: file_embedding
+  parameter:
+    file_path: '../data/vocabulary/vocabulary_extend_2'
+    embedding_size: -1
+
+col6_extend_1:
+  type: sequence
+  transform: file_embedding
+  parameter:
+    file_path: '../data/vocabulary/vocabulary_extend_1'
+    embedding_size: -1
+
+col6_extend_2:
+  type: sequence
+  transform: file_embedding
+  parameter:
+    file_path: '../data/vocabulary/vocabulary_extend_2'
+    embedding_size: -1

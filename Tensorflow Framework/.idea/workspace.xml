@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="86df510d-1730-4766-935c-be3cea250c4d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/code/input_fn.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/input_fn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/utils/feature.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/utils/feature.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1263191883">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="32" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.2" value="10" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.3" value="7" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="31" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="eval_data" value="2" />
+          <entry key="extend_data_sample" value="4" />
+          <entry key="java" value="2" />
+          <entry key="md" value="6" />
+          <entry key="model_config_file" value="1" />
+          <entry key="py" value="150" />
+          <entry key="sh" value="4" />
+          <entry key="train_data" value="6" />
+          <entry key="vocabuary_col4_embedding" value="1" />
+          <entry key="vocabulary_col4" value="3" />
+          <entry key="vocabulary_col6" value="3" />
+          <entry key="vocabulary_col8" value="3" />
+          <entry key="vocabulary_extend_1" value="1" />
+          <entry key="vocabulary_extend_2" value="2" />
+          <entry key="vocabulary_map_id" value="2" />
+          <entry key="yaml" value="40" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Bash" value="4" />
+          <entry key="Markdown" value="6" />
+          <entry key="PLAIN_TEXT" value="30" />
+          <entry key="Python" value="150" />
+          <entry key="YAML" value="40" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="910" />
+          <entry key="dummy" value="93" />
+          <entry key="md" value="2399" />
+          <entry key="py" value="11397" />
+          <entry key="sh" value="73" />
+          <entry key="train_data" value="13" />
+          <entry key="txt" value="596" />
+          <entry key="yaml" value="732" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Bash" value="73" />
+          <entry key="Markdown" value="2399" />
+          <entry key="PLAIN_TEXT" value="702" />
+          <entry key="Python" value="12307" />
+          <entry key="YAML" value="732" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/input_fn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/model_fn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1464">
+              <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+              <folding>
+                <element signature="e#74#97#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/utils/feature.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="187" column="10" selection-start-line="187" selection-start-column="10" selection-end-line="187" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/utils/conf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/map/extend_data_sample">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/utils/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1970">
+              <caret line="127" column="75" lean-forward="true" selection-start-line="127" selection-start-column="75" selection-end-line="127" selection-end-column="75" />
+              <folding>
+                <element signature="e#74#97#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/features.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#74#97#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/feature.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="178" column="22" lean-forward="true" selection-start-line="178" selection-start-column="22" selection-end-line="178" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="651">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="e#74#83#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/utils/data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="28" selection-start-line="28" selection-end-line="33" selection-end-column="27" />
+              <folding>
+                <element signature="e#74#92#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>hash_table</find>
+      <find>type2instance</find>
+      <find>seq_max_len</find>
+      <find>sequence_input_layer</find>
+      <find>HashTable</find>
+      <find>num_oov_buckets</find>
+      <find>oov</find>
+      <find>sequence_categorical_column_with_vocabulary_file</find>
+      <find>Features</find>
+      <find>local</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="distribute_version" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/code/input.py" />
+        <option value="$PROJECT_DIR$/code/main.py" />
+        <option value="$PROJECT_DIR$/code/data.py" />
+        <option value="$PROJECT_DIR$/code/utils/Data.py" />
+        <option value="$PROJECT_DIR$/code/utils/Model.py" />
+        <option value="$PROJECT_DIR$/code/utils/model_util.py" />
+        <option value="$PROJECT_DIR$/code/utils/model_layer.py" />
+        <option value="$PROJECT_DIR$/code/model.py" />
+        <option value="$PROJECT_DIR$/code/utils/read_conf.py" />
+        <option value="$PROJECT_DIR$/code/utils/tfrecord.py" />
+        <option value="$PROJECT_DIR$/code/train.py" />
+        <option value="$PROJECT_DIR$/code/extra_model.py" />
+        <option value="$PROJECT_DIR$/code/load_model.py" />
+        <option value="$PROJECT_DIR$/code/others/tfrecord.py" />
+        <option value="$PROJECT_DIR$/serving/tfs.md" />
+        <option value="$PROJECT_DIR$/serving/serving_cli.sh" />
+        <option value="$PROJECT_DIR$/data/train/train_data" />
+        <option value="$PROJECT_DIR$/data/eval/eval_data" />
+        <option value="$PROJECT_DIR$/code/process.py" />
+        <option value="$PROJECT_DIR$/code/utils/layer.py" />
+        <option value="$PROJECT_DIR$/code/utils/feature_utils.py" />
+        <option value="$PROJECT_DIR$/code/feature.py" />
+        <option value="$PROJECT_DIR$/code/features.py" />
+        <option value="$PROJECT_DIR$/conf/feature.yaml" />
+        <option value="$PROJECT_DIR$/code/utils/conf.py" />
+        <option value="$PROJECT_DIR$/conf/data.yaml" />
+        <option value="$PROJECT_DIR$/code/utils/util.py" />
+        <option value="$PROJECT_DIR$/code/model_fn.py" />
+        <option value="$PROJECT_DIR$/conf/model.yaml" />
+        <option value="$PROJECT_DIR$/code/run.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/code/do_predict.py" />
+        <option value="$PROJECT_DIR$/code/utils/model.py" />
+        <option value="$PROJECT_DIR$/code/test.py" />
+        <option value="$PROJECT_DIR$/code/utils/data.py" />
+        <option value="$PROJECT_DIR$/code/input_fn.py" />
+        <option value="$PROJECT_DIR$/code/utils/feature.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="747" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Neptune" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Neptune" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Neptune" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Neptune" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Neptune" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Neptune" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="others" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Neptune" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Neptune" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Neptune" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Neptune" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Neptune" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Neptune" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Neptune" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Neptune" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Neptune" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Neptune" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="train" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Neptune" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Neptune" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/zhangjun/Documents/Work/Netease/Project/Neptune/conf/feature.yaml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/others" />
+      <recent name="$PROJECT_DIR$/code/utils" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.input_fn">
+    <configuration name="conf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Neptune" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/utils/conf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="do_predict" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Neptune" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/do_predict.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="input_fn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Neptune" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/input_fn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Neptune" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Neptune" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.input_fn" />
+      <item itemvalue="Python.run" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.conf" />
+      <item itemvalue="Python.do_predict" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.input_fn" />
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python.do_predict" />
+        <item itemvalue="Python.conf" />
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86df510d-1730-4766-935c-be3cea250c4d" name="Default Changelist" comment="" />
+      <created>1537944953253</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537944953253</updated>
+    </task>
+    <task id="LOCAL-00001" summary="input_fn done !">
+      <created>1543922562434</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1543922562434</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feature done !">
+      <created>1543924681297</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543924681297</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add model and layer">
+      <created>1543981124681</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543981124681</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add model and layer more">
+      <created>1543984940595</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543984940595</updated>
+    </task>
+    <task id="LOCAL-00005" summary="run model done and add test">
+      <created>1543993651947</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1543993651947</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add more files">
+      <created>1543993701903</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1543993701903</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add author info">
+      <created>1543994568287</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543994568287</updated>
+    </task>
+    <task id="LOCAL-00008" summary="增加raw_input 的到处方式，添加serving相关说明及代码">
+      <created>1543997581053</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1543997581053</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add rnn to model">
+      <created>1544003319418</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1544003319418</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update dynamic_rnn func">
+      <created>1544066014248</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1544066014248</updated>
+    </task>
+    <task id="LOCAL-00011" summary="loss part for new rnn model prepared">
+      <created>1544085931217</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1544085931217</updated>
+    </task>
+    <task id="LOCAL-00012" summary="find weight_name update">
+      <created>1544517495967</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1544517495967</updated>
+    </task>
+    <task id="LOCAL-00013" summary="FIELD_DELIM bug fixed">
+      <created>1544599236771</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1544599236771</updated>
+    </task>
+    <task id="LOCAL-00014" summary="utf8 added">
+      <created>1544687072450</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1544687072450</updated>
+    </task>
+    <task id="LOCAL-00015" summary="value.strip() bug">
+      <created>1544687929775</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1544687929775</updated>
+    </task>
+    <task id="LOCAL-00016" summary="vocabulary_ fixed">
+      <created>1544770034753</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1544770034753</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feature_utils done">
+      <created>1545099088376</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1545099088376</updated>
+    </task>
+    <task id="LOCAL-00018" summary="modified feature auto generator done !">
+      <created>1545102329756</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1545102329756</updated>
+    </task>
+    <task id="LOCAL-00019" summary="modified feature auto generator done more !">
+      <created>1545102519108</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1545102519109</updated>
+    </task>
+    <task id="LOCAL-00020" summary="mistype bug fixed">
+      <created>1545103856305</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1545103856305</updated>
+    </task>
+    <task id="LOCAL-00021" summary="update readme">
+      <created>1545794775880</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1545794775880</updated>
+    </task>
+    <task id="LOCAL-00022" summary="update readme">
+      <created>1545794943113</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1545794943113</updated>
+    </task>
+    <task id="LOCAL-00023" summary="update readme">
+      <created>1545795112354</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1545795112354</updated>
+    </task>
+    <task id="LOCAL-00024" summary="regular_loss">
+      <created>1546337808105</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1546337808105</updated>
+    </task>
+    <task id="LOCAL-00025" summary="auto generate feature_raw_spec and feature_spec">
+      <created>1547448426504</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1547448426505</updated>
+    </task>
+    <task id="LOCAL-00026" summary="simplify">
+      <created>1548140757001</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1548140757001</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add raw predict code and update readme">
+      <created>1548213027383</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1548213027383</updated>
+    </task>
+    <task id="LOCAL-00028" summary="update readme">
+      <created>1548213151507</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1548213151507</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_in_test_py - 2018.12.05 at 14h 44m 12s.xml">
+      <configuration name="pytest in test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_test - 2018.12.05 at 14h 45m 56s.xml">
+      <configuration name="pytest for test.test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_test - 2018.12.05 at 14h 46m 45s.xml">
+      <configuration name="pytest for test.test" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_test - 2018.12.05 at 14h 47m 41s.xml">
+      <configuration name="pytest for test.test" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="747" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20174742" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Project Explorer" order="3" />
+      <window_info id="DB Browser" order="4" />
+      <window_info id="Job Explorer" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4997367" weight="0.11603054" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4997367" weight="0.4328767" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32876712" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.23150685" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5002633" side_tool="true" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.3908397" />
+      <window_info anchor="bottom" id="Console" order="12" />
+      <window_info anchor="bottom" id="DB Execution Console" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="input_fn done !" />
+    <MESSAGE value="feature done !" />
+    <MESSAGE value="add model and layer" />
+    <MESSAGE value="add model and layer more" />
+    <MESSAGE value="run model done and add test" />
+    <MESSAGE value="add more files" />
+    <MESSAGE value="add author info" />
+    <MESSAGE value="增加raw_input 的到处方式，添加serving相关说明及代码" />
+    <MESSAGE value="add rnn to model" />
+    <MESSAGE value="update dynamic_rnn func" />
+    <MESSAGE value="loss part for new rnn model prepared" />
+    <MESSAGE value="find weight_name update" />
+    <MESSAGE value="FIELD_DELIM bug fixed" />
+    <MESSAGE value="utf8 added" />
+    <MESSAGE value="value.strip() bug" />
+    <MESSAGE value="vocabulary_ fixed" />
+    <MESSAGE value="feature_utils done" />
+    <MESSAGE value="modified feature auto generator done !" />
+    <MESSAGE value="modified feature auto generator done more !" />
+    <MESSAGE value="mistype bug fixed" />
+    <MESSAGE value="regular_loss" />
+    <MESSAGE value="auto generate feature_raw_spec and feature_spec" />
+    <MESSAGE value="simplify" />
+    <MESSAGE value="add raw predict code and update readme" />
+    <MESSAGE value="update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/data/vector_file/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/code/preprocess.py" />
+    <entry file="file://$PROJECT_DIR$/data/vocabulary/vocabulary_col6">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vocabulary/vocabulary_col8">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vocabulary/vocabulary_extend_1">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vocabulary/vocabulary_extend_2">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/vocabulary/vocabulary_map_id">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/tensorflow/python/layers/convolutional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="343" column="37" lean-forward="true" selection-start-line="343" selection-start-column="37" selection-end-line="343" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/train.py" />
+    <entry file="file://$PROJECT_DIR$/code/extra_model.py" />
+    <entry file="file://$PROJECT_DIR$/data/vocabulary/vocabulary_col4">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/weight/vocabuary_col4_embedding">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/tensorflow/python/tools/saved_model_cli.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="431" selection-start-line="431" selection-end-line="431" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serving/java_client/raw_input/ModelServing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1155" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serving/java_client/example/modelServing2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serving/start_tfs.sh" />
+    <entry file="file://$PROJECT_DIR$/serving/model_config_file" />
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/control_flow_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2255">
+          <caret line="3171" column="5" lean-forward="true" selection-start-line="3171" selection-start-column="5" selection-end-line="3171" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/gen_array_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="4177" column="77" lean-forward="true" selection-start-line="4177" selection-start-column="77" selection-end-line="4177" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/array_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-299">
+          <caret line="820" column="22" selection-start-line="820" selection-start-column="18" selection-end-line="820" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/embedding_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="290" column="49" selection-start-line="290" selection-start-column="49" selection-end-line="290" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/lookup_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="796" column="67" lean-forward="true" selection-start-line="796" selection-start-column="67" selection-end-line="796" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/tensorflow/contrib/feature_column/python/feature_column/sequence_feature_column.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="276" column="35" selection-start-line="276" selection-start-column="35" selection-end-line="276" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/tensorflow/python/feature_column/feature_column.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="1231" column="56" selection-start-line="1231" selection-start-column="40" selection-end-line="1231" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/numpy/lib/npyio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="772" column="4" selection-start-line="772" selection-start-column="4" selection-end-line="772" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serving/serving_cli.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serving/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="315">
+            <caret line="15" selection-start-line="15" selection-end-line="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/eval/eval_data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="378">
+            <caret line="18" selection-start-line="18" selection-end-line="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/export/1547448362/assets/vocabulary_col6">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/export/1547448362/assets/vocabulary_col8">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/others/tfrecord.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="42" selection-start-line="42" selection-end-line="50" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/data.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///anaconda3/lib/python3.6/site-packages/tensorflow/python/estimator/estimator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23121">
+          <caret line="1153" column="15" selection-start-line="1153" selection-start-column="15" selection-end-line="1153" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/do_predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+          <folding>
+            <element signature="e#74#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/model.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/train/train_data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/utils/layer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#74#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/map/extend_data_sample">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/utils/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1970">
+          <caret line="127" column="75" lean-forward="true" selection-start-line="127" selection-start-column="75" selection-end-line="127" selection-end-column="75" />
+          <folding>
+            <element signature="e#74#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/model_fn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1464">
+          <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+          <folding>
+            <element signature="e#74#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/utils/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#74#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/input_fn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/utils/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/feature.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="178" column="22" lean-forward="true" selection-start-line="178" selection-start-column="22" selection-end-line="178" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/utils/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="28" selection-start-line="28" selection-end-line="33" selection-end-column="27" />
+          <folding>
+            <element signature="e#74#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/utils/feature.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="187" column="10" selection-start-line="187" selection-start-column="10" selection-end-line="187" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

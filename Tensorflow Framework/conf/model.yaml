@@ -1,0 +1,10 @@
+model_check_dir: '../model/model_check'
+model_export_dir: '../model/export'
+raw_model_export_dir : '../model/export_raw_input'
+keep_train: False
+num_parallel: 4
+opt_algo: adam
+learning_rate: 0.01
+train_epochs: 2
+batch_size: 4
+log_steps: 10

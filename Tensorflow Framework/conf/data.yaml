@@ -1,0 +1,22 @@
+data_schema:
+  col1 : 'float'
+  col2 : 'float'
+  col3 : 'float'
+  col4 : 'string'
+  col5 : 'float'
+  col6 : 'string|#' # this means col6's value is sequence which can be splited by '#'
+  col7 : 'string'
+  col8 : 'string|#'
+  label : 'float'
+
+input_except : ['label']
+
+field_delim: ',' # sep for data | write hive for \001
+
+label_col : ['label']
+vocabulary_col : ['col4','col6','col8']
+
+train_data_path : '../data/train'
+eval_data_path :  '../data/eval'
+vocabulary_path : '../data/vocabulary'
+
