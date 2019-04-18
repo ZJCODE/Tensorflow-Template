@@ -183,3 +183,30 @@ def get_local_vec(feature_dict, feature_name, meta_data_path, vec_data_path):
     feature_local_vec = tf.nn.embedding_lookup(vec_var, vec_index_map.lookup(feature_dict[feature_name]))
 
     return feature_local_vec
+
+
+def map_more_feature(feature_dict, feature_name, map_file, map_cols, sep):
+    # first col of map_file must be map_id
+    map_cols = map_cols[1:]
+    map_features = {}
+    keys = []  # map_id col
+    values = dict(zip(map_cols, [[] for _ in range(len(map_cols))]))
+
+    with open(map_file, 'r', encoding='utf8') as f:
+        for line in f:
+            line_split = line.rstrip().split(sep)
+            keys.append(line_split[0].encode('utf8'))
+            for i, col in enumerate(map_cols):
+                values[col].append(line_split[i + 1].encode('utf8'))
+
+    hash_table = {}
+    for col in map_cols:
+        default_val = '-'
+        table = HashTable(
+            KeyValueTensorInitializer(keys, values[col]), default_val)
+        hash_table[col] = table
+
+    for col in map_cols:
+        map_features[feature_name + '_' + col] = hash_table[col].lookup(feature_dict[feature_name])
+
+    return map_features

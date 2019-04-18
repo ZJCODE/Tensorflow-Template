@@ -7,6 +7,7 @@ Created on 2018.12.05
 
 import tensorflow as tf
 import time
+import os
 
 
 def list_files(input_data):
@@ -43,3 +44,23 @@ def prase_feature_placehold(data_type):
         return tf.placeholder(tf.string, [None])
     else:
         print('wrong data type')
+
+
+def get_free_gpus(use_mem_limit=500):
+    """
+    获得当前gpu上空闲的gpu编号，空闲定义：内存使用小于use_mem_limit
+    :param use_mem_limit: 内存使用限制
+    :return:['0', '1','7']
+    """
+    cmd = "nvidia-smi --query-gpu=memory.total,memory.free,memory.used --format=csv,noheader"
+    results = os.popen(cmd).readlines()
+    gpu_num = 0
+    free_gpu_num = []
+    for line in results:
+        # print('gpu:{}, result:{}'.format(gpu_num, line))
+        used_mem = int(line.split(',')[2].split(' ')[1].strip())
+        if used_mem < use_mem_limit:
+            free_gpu_num.append(str(gpu_num))
+        gpu_num += 1
+    print('free gpus:{}'.format(free_gpu_num))
+    return free_gpu_num

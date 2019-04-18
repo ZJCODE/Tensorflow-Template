@@ -19,6 +19,12 @@ def get_processed_feature(raw_features):
     features = {}
     features.update(raw_features)
 
+    if len(config.MAP_EXTEND_FEATURE) > 0:
+        for feature_name, map_file, map_cols, sep in config.MAP_EXTEND_FEATURE:
+            map_features = map_more_feature(features, feature_name, map_file, map_cols, sep)
+            raw_features.update(map_features)
+            features.update(map_features)
+
     if len(config.NUMERICAL_COLUMNS) > 0:
         features.update({'numerical_columns': get_numeric_column(raw_features, config.NUMERICAL_COLUMNS)})
         for feature_name in config.NUMERICAL_COLUMNS:
@@ -110,6 +116,7 @@ def get_processed_feature(raw_features):
             features.update(
                 {'local_vec_' + feature_name:
                      get_local_vec(raw_features, feature_name, meta_data_path, vec_data_path)})
+
     return features
 
 

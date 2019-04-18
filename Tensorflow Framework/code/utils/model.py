@@ -129,12 +129,6 @@ def export_model(model, export_path, feature_spec):
         receiver_tensors = {'examples': serialized_tf_example}
         features = tf.parse_example(serialized_tf_example, feature_spec)
 
-        # preprocess feature
-        data_process_params = {'sequence_cols': config.SEQUENCE_COLS,
-                               'map_extend_features': config.MAP_EXTEND_FEATURE}
-        data_process = dataProcess(data_process_params)
-        features = data_process.do_process(features)
-
         return tf.estimator.export.ServingInputReceiver(features, receiver_tensors)
 
     model.export_savedmodel(export_path, serving_input_receiver_fn, strip_default_attrs=True)

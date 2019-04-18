@@ -5,6 +5,6 @@ keep_train: False
 num_parallel: 4
 opt_algo: adam
 learning_rate: 0.01
-train_epochs: 2
-batch_size: 4
+train_epochs: 5
+batch_size: 10
 log_steps: 10

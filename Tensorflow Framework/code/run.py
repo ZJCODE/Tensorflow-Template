@@ -5,13 +5,15 @@ Created on 2018.12.05
 @author: zhangjun
 """
 
+import os
 import tensorflow as tf
 import shutil
 from utils.conf import Config
 from input_fn import input_fn
 from model_fn import model_fn
 from utils.model import train_and_eval, export_model, export_model_raw_input
-from utils.util import prase_feature_placehold,prase_feature
+from utils.util import prase_feature_placehold, prase_feature
+from utils.util import get_free_gpus
 
 config = Config(base_dir='../conf')
 
@@ -20,6 +22,11 @@ def main():
     if not config.get_model_prop('keep_train'):
         shutil.rmtree(config.get_model_prop('model_check_dir'), ignore_errors=True)
         print('Remove model directory: {}'.format(config.get_model_prop('model_check_dir')))
+
+    try:
+        os.environ['CUDA_VISIBLE_DEVICES'] = get_free_gpus()[-1]
+    except:
+        pass
 
     model_params = {'opt_algo': config.get_model_prop('opt_algo'),
                     'learning_rate': config.get_model_prop('learning_rate')}
@@ -54,11 +61,11 @@ def main():
 
     feature_spec = {}
 
-    for name,dtype in zip(config.HEADER,config.DTYPE):
+    for name, dtype in zip(config.HEADER, config.DTYPE):
         if name in config.get_data_prop('input_except'):
             pass
         else:
-            feature_spec.update({name:prase_feature(dtype)})
+            feature_spec.update({name: prase_feature(dtype)})
 
     print(feature_spec)
 
@@ -73,20 +80,16 @@ def main():
     #                     'col5': tf.placeholder(tf.float32, [None]),
     #                     'col6': tf.placeholder(tf.string, [None]),
     #                     'col7': tf.placeholder(tf.string, [None]),
-    #                     'col8': tf.placeholder(tf.string, [None]),
-    #                     'col7_extend_1': tf.placeholder(tf.string, [None]), # raw input should input extend feature manually
-    #                     'col7_extend_2': tf.placeholder(tf.string, [None]),
-    #                     'col6_extend_1': tf.placeholder(tf.string, [None]),
-    #                     'col6_extend_2': tf.placeholder(tf.string, [None])}
+    #                     'col8': tf.placeholder(tf.string, [None])}
     feature_raw_spec = {}
-    for name,dtype in zip(config.INPUT_RAW_FEATURE_NAMES,config.INPUT_RAW_FEATURE_TYPES):
-        feature_raw_spec.update({name:prase_feature_placehold(dtype)})
+    for name, dtype in zip(config.HEADER, config.DTYPE):
+        feature_raw_spec.update({name: prase_feature_placehold(dtype)})
 
     print(feature_raw_spec)
 
     export_model_raw_input(model=model,
-                             export_path=config.get_model_prop('raw_model_export_dir'),
-                             feature_spec=feature_raw_spec)
+                           export_path=config.get_model_prop('raw_model_export_dir'),
+                           feature_spec=feature_raw_spec)
 
 
 if __name__ == '__main__':

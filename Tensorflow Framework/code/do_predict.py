@@ -19,10 +19,11 @@ def test_load_model_predict():
                             'col2': 3.0,
                             'col3': 5.0,
                             'col4': "a",
-                            'col5': 3.1,
-                            'col6': "a#d#a",
+                            'col5': 3.0,
+                            'col6': "r#w#k",
                             'col7': "f",
-                            'col8': "w#e"}
+                            'col8': "e"}
+
     model_path_list = glob.glob(config.get_model_prop('model_export_dir') + '/*')
     export_path = max(model_path_list)
 
@@ -35,14 +36,23 @@ def test_load_model_predict():
 
 def test_load_model_predict_raw():
     sess = tf.Session()
+    # feature_dict_example = {'col1': 10.0,
+    #                         'col2': 13.0,
+    #                         'col3': 16.0,
+    #                         'col4': "b",
+    #                         'col5': 9.0,
+    #                         'col6': "g#d#a",
+    #                         'col7': "e",
+    #                         'col8': "w"}
+
     feature_dict_example = {'col1': 2.0,
                             'col2': 3.0,
                             'col3': 5.0,
                             'col4': "a",
-                            'col5': 3.1,
-                            'col6': "a#d#a",
-                            'col7': "f",
-                            'col8': "w#e"}
+                            'col5': 3.0,
+                            'col6': "r#w#k",
+                            'col7': "e",
+                            'col8': "e"}
 
     raw_model_path_list = glob.glob(config.get_model_prop('raw_model_export_dir') + '/*')
     raw_export_path = max(raw_model_path_list)
@@ -56,4 +66,4 @@ def test_load_model_predict_raw():
 
 if __name__ == '__main__':
     test_load_model_predict()
-    # test_load_model_predict_raw()
+    test_load_model_predict_raw()

@@ -28,8 +28,6 @@ class Config(object):
         self.data_config = self.read_data_conf()
         self.feature_config = self.read_feature_conf()
         self.model_config = self.read_model_conf()
-        self.INPUT_RAW_FEATURE_NAMES = []
-        self.INPUT_RAW_FEATURE_TYPES = []
 
 
         self.get_columns()
@@ -78,65 +76,54 @@ class Config(object):
         self.NUMERICAL_COLUMNS = [k for k, v in self.feature_config.items() if
                                   v['type'] == 'continuous' and v['transform'] == 'original']
 
-        self.INPUT_RAW_FEATURE_NAMES += self.NUMERICAL_COLUMNS
-        self.INPUT_RAW_FEATURE_TYPES += ['float' for x in self.NUMERICAL_COLUMNS]
-
-
         # bucket [[col,boundaries]...]
         self.BUCKET_COLUMNS = [[k, v['parameter']['boundaries']] for k, v in
                                self.feature_config.items() if
                                v['type'] == 'continuous' and v['transform'] == 'bucket']
 
-        self.INPUT_RAW_FEATURE_NAMES += [x[0] for x in self.BUCKET_COLUMNS]
-        self.INPUT_RAW_FEATURE_TYPES += ['float' for x in self.BUCKET_COLUMNS]
+
 
         # hash category [one-hot] [[col , hash_size]...]
         self.HASH_CATEGORICAL_COLUMNS = [[k, v['parameter']['hash_size']] for k, v in
                                          self.feature_config.items() if
                                          v['type'] == 'category' and v['transform'] == 'hash_ont_hot']
 
-        self.INPUT_RAW_FEATURE_NAMES += [x[0] for x in self.HASH_CATEGORICAL_COLUMNS]
-        self.INPUT_RAW_FEATURE_TYPES += ['string' for x in self.HASH_CATEGORICAL_COLUMNS]
+
 
         # file category [one-hot] [[col,file_path]...]
         self.FILE_CATEGORICAL_COLUMNS = [[k, v['parameter']['file_path']] for k, v in
                                          self.feature_config.items() if
                                          v['type'] == 'category' and v['transform'] == 'file_one_hot']
 
-        self.INPUT_RAW_FEATURE_NAMES += [x[0] for x in self.FILE_CATEGORICAL_COLUMNS]
-        self.INPUT_RAW_FEATURE_TYPES += ['string' for x in self.FILE_CATEGORICAL_COLUMNS]
+
 
         # hash embedding [embedding] [[col , hash_size , embedding_size]...] | embedding_size == -1 means dim_auto
         self.HASH_EMBEDDING_COLUMNS = [[k, v['parameter']['hash_size'], v['parameter']['embedding_size']] for k, v in
                                        self.feature_config.items() if
                                        v['type'] == 'category' and v['transform'] == 'hash_embedding']
 
-        self.INPUT_RAW_FEATURE_NAMES += [x[0] for x in self.HASH_EMBEDDING_COLUMNS]
-        self.INPUT_RAW_FEATURE_TYPES += ['string' for x in self.HASH_EMBEDDING_COLUMNS]
+
 
         # file embedding [embedding] [[col , file_path,embedding_size]...]
         self.FILE_EMBEDDING_COLUMNS = [[k, v['parameter']['file_path'], v['parameter']['embedding_size']] for k, v in
                                        self.feature_config.items() if
                                        v['type'] == 'category' and v['transform'] == 'file_embedding']
 
-        self.INPUT_RAW_FEATURE_NAMES += [x[0] for x in self.FILE_EMBEDDING_COLUMNS]
-        self.INPUT_RAW_FEATURE_TYPES += ['string' for x in self.FILE_EMBEDDING_COLUMNS]
+
 
         # hash sequence category [sequence one-hot ] [[col , hash_size]...]
         self.HASH_SEQUENCE_CATEGORICAL_COLUMNS = [[k, v['parameter']['hash_size']] for k, v in
                                                   self.feature_config.items() if
                                                   v['type'] == 'sequence' and v['transform'] == 'hash_one_hot']
 
-        self.INPUT_RAW_FEATURE_NAMES += [x[0] for x in self.HASH_SEQUENCE_CATEGORICAL_COLUMNS]
-        self.INPUT_RAW_FEATURE_TYPES += ['string' for x in self.HASH_SEQUENCE_CATEGORICAL_COLUMNS]
+
 
         # file sequence category [sequence one-hot ] [[col,file_path]...]
         self.FILE_SEQUENCE_CATEGORICAL_COLUMNS = [[k, v['parameter']['file_path']] for k, v in
                                                   self.feature_config.items() if
                                                   v['type'] == 'sequence' and v['transform'] == 'file_one_hot']
 
-        self.INPUT_RAW_FEATURE_NAMES += [x[0] for x in self.FILE_SEQUENCE_CATEGORICAL_COLUMNS]
-        self.INPUT_RAW_FEATURE_TYPES += ['string' for x in self.FILE_SEQUENCE_CATEGORICAL_COLUMNS]
+
 
         # hash sequence embedding [sequence embedding ] [[col , hash_size,embedding_size]...]
         self.HASH_SEQUENCE_EMBEDDING_COLUMNS = [[k, v['parameter']['hash_size'], v['parameter']['embedding_size']] for
@@ -144,8 +131,7 @@ class Config(object):
                                                 self.feature_config.items() if
                                                 v['type'] == 'sequence' and v['transform'] == 'hash_embedding']
 
-        self.INPUT_RAW_FEATURE_NAMES += [x[0] for x in self.HASH_SEQUENCE_EMBEDDING_COLUMNS]
-        self.INPUT_RAW_FEATURE_TYPES += ['string' for x in self.HASH_SEQUENCE_EMBEDDING_COLUMNS]
+
 
         # file sequence embedding [sequence embedding ] [[col,file_path,embedding_size]...]
         self.FILE_SEQUENCE_EMBEDDING_COLUMNS = [[k, v['parameter']['file_path'], v['parameter']['embedding_size']] for
@@ -153,31 +139,24 @@ class Config(object):
                                                 self.feature_config.items() if
                                                 v['type'] == 'sequence' and v['transform'] == 'file_embedding']
 
-        self.INPUT_RAW_FEATURE_NAMES += [x[0] for x in self.FILE_SEQUENCE_EMBEDDING_COLUMNS]
-        self.INPUT_RAW_FEATURE_TYPES += ['string' for x in self.FILE_SEQUENCE_EMBEDDING_COLUMNS]
+
 
         # hash multi category [multi-hot] [[col , hash_size]...]
         self.HASH_MULTI_CATEGORICAL_COLUMNS = [[k, v['parameter']['hash_size']] for k, v in
                                                self.feature_config.items() if
                                                v['type'] == 'sequence' and v['transform'] == 'hash_multi_hot']
 
-        self.INPUT_RAW_FEATURE_NAMES += [x[0] for x in self.HASH_MULTI_CATEGORICAL_COLUMNS]
-        self.INPUT_RAW_FEATURE_TYPES += ['string' for x in self.HASH_MULTI_CATEGORICAL_COLUMNS]
 
         # file multi category [multi-hot] [[col,file_path]...]
         self.FILE_MULTI_CATEGORICAL_COLUMNS = [[k, v['parameter']['file_path']] for k, v in
                                                self.feature_config.items() if
                                                v['type'] == 'sequence' and v['transform'] == 'file_multi_hot']
 
-        self.INPUT_RAW_FEATURE_NAMES += [x[0] for x in self.FILE_MULTI_CATEGORICAL_COLUMNS]
-        self.INPUT_RAW_FEATURE_TYPES += ['string' for x in self.FILE_MULTI_CATEGORICAL_COLUMNS]
 
         # local vec  [[col , meta_path , vec_path]...]
         self.LOCAL_VECS = [[k, v['parameter']['meta_path'], v['parameter']['vec_path']] for k, v in
                            self.feature_config.items() if v['transform'] == 'local_vec']
 
-        self.INPUT_RAW_FEATURE_NAMES += [x[0] for x in self.LOCAL_VECS]
-        self.INPUT_RAW_FEATURE_TYPES += ['string' for x in self.LOCAL_VECS]
 
         # extend feature [[col,extend_file_path,extend_features_list,sep]]
         self.MAP_EXTEND_FEATURE = [
@@ -318,7 +297,3 @@ if __name__ == '__main__':
     print(config.RECORD_DEFAULTS)
     print('# label_col')
     print(config.get_data_prop('label_col'))
-    print('# raw input feature names')
-    print(config.INPUT_RAW_FEATURE_NAMES)
-    print('# raw input feature types')
-    print(config.INPUT_RAW_FEATURE_TYPES)

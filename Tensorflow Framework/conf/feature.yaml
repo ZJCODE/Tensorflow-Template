@@ -155,21 +155,21 @@ col7_extend_1:
   transform: file_embedding
   parameter:
     file_path: '../data/vocabulary/vocabulary_extend_1'
-    embedding_size: -1
+    embedding_size: 4
 
 col7_extend_2:
   type: category
   transform: file_embedding
   parameter:
     file_path: '../data/vocabulary/vocabulary_extend_2'
-    embedding_size: -1
+    embedding_size: 4
 
 col6_extend_1:
   type: sequence
   transform: file_embedding
   parameter:
     file_path: '../data/vocabulary/vocabulary_extend_1'
-    embedding_size: -1
+    embedding_size: 4
 
 col6_extend_2:
   type: sequence

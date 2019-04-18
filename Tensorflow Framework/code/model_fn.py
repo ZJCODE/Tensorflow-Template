@@ -16,25 +16,20 @@ config = Config(base_dir='../conf')
 
 def model_fn_core(feature, params):
     # [batch_size,seq_length,vec_dim]
-    sequence_vector = feature['sequence_embedding_column_with_vocabulary_file_col8']
-    # [batch_size,1]
-    sequence_real_len = feature['numerical_columns_col1']
+    sequence_vector = feature['sequence_embedding_column_with_vocabulary_file_col6_extend_2']
     numerical = feature['numerical_columns']
     # [batch_size,vec_dim]
-    final = feature['embedding_column_with_vocabulary_file_col4']
+    col4 = feature['embedding_column_with_vocabulary_file_col4']
 
-    vec_dim = sequence_vector.get_shape().as_list()[-1]
-    units_num = vec_dim
-    # rnn_out_put [batch_size,seq_length,vec_dim]
-    # last_hidden_state [batch_size,vec_dim]
-    rnn_out_put, last_hidden_state = dynamic_rnn(sequence_vector, sequence_real_len, units_num)
-    inputs = tf.concat([last_hidden_state, numerical], axis=1)
-    output = mlp(inputs, hidden_units_list=[64, 32, 16, 1], regular_rate=0.1, dropout=0.1, training=params['training'])
+    col7_e1 = feature['embedding_column_with_vocabulary_file_col7_extend_1']
+    col7_e2 = feature['embedding_column_with_vocabulary_file_col7_extend_2']
 
-    # # clip_length = 30
-    # # rnn_out_put_clip = padding_clip_sequence_vector(rnn_out_put,clip_length)
-    # # sequence_vector_clip = padding_clip_sequence_vector(sequence_vector,clip_length)
-    #
+    inputs = tf.concat([tf.reduce_mean(sequence_vector, axis=1), col4, col7_e1, col7_e2, numerical], axis=1)
+
+    # inputs = tf.reduce_mean(sequence_vector, axis=1)
+
+    output = mlp(inputs, hidden_units_list=[16, 1], regular_rate=0.1, dropout=0.1, training=params['training'])
+
     return output
 
 
